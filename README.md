@@ -15,6 +15,9 @@ A gender detection and age prediction web application developed using Flask, Ope
 ### My Teammates
 [![anchitya-shield]][anchitya] [![rhys-shield]][rhys] [![shaadman-shield]][shaadman]
 
+### My Contribution
+Built the backend solution of the application. Integrated the OpenCV code as well as frontend developed by my fellow teammates with the flask backend.
+
 ## Getting Started
 
 ### Prerequisites
