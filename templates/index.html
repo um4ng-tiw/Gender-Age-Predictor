@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>Detect Age & Gender</title>
+<link rel = "icon" href = "https://cdn.pixabay.com/photo/2019/06/23/05/32/deer-head-4292868_1280.png" type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/styles/style.css">
+<link rel="stylesheet" href="../static/styles/aj.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg aj-display-container aj-opacity-min" id="home">
+  <div class="aj-display-middle" style="white-space:nowrap;">
+    <span class="aj-center aj-padding-large aj-black aj-xlarge aj-wide aj-animate-opacity">Gender<span class="aj-hide-small"> Recognization</span> & Age Prediction</span>
+  </div>
+</div>
+<br><br><br>
+<div class="action-wrap">
+  <div class="action-html">
+    <input id="tab-1" type="radio" name="tab" class="live" checked><label for="tab-1" class="tab">Live</label>
+    <input id="tab-2" type="radio" name="tab" class="photo"><label for="tab-2" class="tab">Photo</label>
+    <div class="action-form">
+      <div class="live-htm">
+        <div class="group">
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="https://cdn.pixabay.com/photo/2021/03/23/09/01/webcam-6116845_1280.png" height="120" width="120">
+          <br><br>
+          <a href='/webcam'><input type="submit" class="button" value="Go live to detect"></a> 
+        </div>
+      </div>
+      <div class="photo-htm">
+        <form action="/upload" method="POST" enctype="multipart/form-data" style="color: #aaa">
+          <br><br>Select image to upload:<br><br><br>
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <br><br><br><br>
+        <div class="group">
+          <input type="submit" class="button" value="Upload and detect" name="submit">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="aj-content aj-container aj-padding-64" id="about">
+  <h3 class="aj-center">ABOUT THE PROJECT</h3>
+  <p class="aj-center"><em>ML Project</em></p>
+  <p>We will use Deep Learning to accurately identify the gender and age of a person from a single image of a face.</p>
+  </div>
+  
+
+<!-- Footer -->
+<footer class="aj-center aj-black aj-padding-64 aj-opacity aj-hover-opacity-off">
+  <a href="#home" class="aj-button aj-light-grey"><i class="fa fa-arrow-up aj-margin-right"></i>To the top</a>
+  <div class="aj-section" style="text-align: left; padding-left: 10px">
+    <p>Project by :</p>
+    <div class="hr"></div>
+    <table>
+      <tr>
+        <th><p>Anchitya</th>
+        <th>
+          <a href=""><i class="fa fa-facebook-official aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-instagram aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-snapchat aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-twitter aj-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/in/anchitya/"><i class="fa fa-linkedin aj-hover-opacity"></i></a></th>
+        </p>
+      </tr>
+      <tr>
+        <th><p>Rhys Rahman</th>
+        <th>
+          <a href="https://www.facebook.com/rhysrocks200"><i class="fa fa-facebook-official aj-hover-opacity"></i></a>
+          <a href="https://www.instagram.com/rhys_tris"><i class="fa fa-instagram aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-snapchat aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-twitter aj-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/in/rhys-rahman-775051189/"><i class="fa fa-linkedin aj-hover-opacity"></i></a>
+        </th>
+        </p>
+      </tr>
+      <tr>
+        <th><p>Shaadmaan Adil Raza</th>
+        <th>
+          <a href=""><i class="fa fa-facebook-official aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-instagram aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-snapchat aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-twitter aj-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/in/shaadmaan-adil-raza-48545916b/"><i class="fa fa-linkedin aj-hover-opacity"></i></a>
+        </th>
+        </p>
+      </tr>
+    </table>
+  </div>
+  <div style="text-align: right; padding-right: 10px">
+    <p>Guided by : Ms. Saswati Bhattacharya</p>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
